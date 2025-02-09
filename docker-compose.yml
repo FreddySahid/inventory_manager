@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    build: .
+    ports:
+      - "8000:8000"  # Map host port 8000 to container port 8000
+    volumes:
+      - .:/app       # Mount the current directory to /app in the container

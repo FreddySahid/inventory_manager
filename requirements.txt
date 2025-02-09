@@ -1,0 +1,32 @@
+# FastAPI y servidor ASGI
+fastapi[all]  # Incluye Uvicorn y extras
+uvicorn[standard]  # Servidor ASGI recomendado
+gunicorn
+
+# Base de datos PostgreSQL
+asyncpg  # Cliente asíncrono para PostgreSQL
+sqlalchemy  # ORM para manejar modelos SQL
+alembic  # Migraciones de base de datos para SQLAlchemy
+
+# Base de datos MongoDB
+motor  # Cliente asíncrono para MongoDB
+
+# Autenticación con JWT
+pyjwt[crypto]  # Manejo de JWT
+passlib[bcrypt]  # Hashing de contraseñas seguro
+python-multipart  # Manejo de formularios en FastAPI
+
+
+
+# Validación de datos con Pydantic
+pydantic  # Validación de datos
+pydantic-settings  # Manejo de configuración con variables de entorno
+
+# Utilidades extra
+httpx  # Cliente HTTP asíncrono
+email-validator  # Validación de emails en Pydantic
+
+# Desarrollo y depuración
+ipython  # Consola interactiva para pruebas
+pytest  # Pruebas unitarias
+pytest-asyncio  # Soporte para pruebas asíncronas
